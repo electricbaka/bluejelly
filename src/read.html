@@ -1,0 +1,102 @@
+<!doctype html>
+<!--
+Copyright 2017 JellyWare Inc. All Rights Reserved.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="BlueJelly">
+    <meta name="viewport" content="width=640, maximum-scale=1.0, user-scalable=yes">
+    <title>BlueJelly</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="bluejelly.js"></script>
+  </head>
+
+<body>
+<div class="container">
+    <div class="title margin">
+        <p id="title">BlueJelly Sample</p>
+        <p id="subtitle">Readでデータ読み込み</p>
+    </div>
+
+    <div class="contents margin">
+        <button id="read" class="button">Read</button>
+        <hr>
+        <div id="device_name"> </div>
+        <div id="uuid_name"> </div>
+        <div id="data_text"> </div>
+        <div id="status"> </div>
+
+    </div>
+    <div class="footer margin">
+        For more information, see <a href="http://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
+    </div>
+</div>
+<script>
+//--------------------------------------------------
+//Global変数
+//--------------------------------------------------
+//BlueJellyのインスタンス生成
+var ble = new BlueJelly();
+
+
+//--------------------------------------------------
+//ロード時の処理
+//--------------------------------------------------
+window.onload = function () {
+  //UUIDの設定
+  ble.setUUID("UUID1", "713d0000-503e-4c75-ba94-3148f18d941e", "713d0002-503e-4c75-ba94-3148f18d941e");  //BLEnano SimpleControl rx_uuid
+}
+
+
+//--------------------------------------------------
+//Scan後の処理
+//--------------------------------------------------
+ble.onScan = function (deviceName) {
+  document.getElementById('device_name').innerHTML = deviceName;
+  document.getElementById('status').innerHTML = "found device!";
+}
+
+
+//--------------------------------------------------
+//ConnectGATT後の処理
+//--------------------------------------------------
+ble.onConnectGATT = function (uuid) {
+  console.log('> connected GATT!');
+
+  document.getElementById('uuid_name').innerHTML = uuid;
+  document.getElementById('status').innerHTML = "connected GATT!";
+}
+
+
+//--------------------------------------------------
+//Read後の処理：得られたデータの表示など行う
+//--------------------------------------------------
+ble.onRead = function (data, uuid){
+  //フォーマットに従って値を取得
+  value = data.getInt16(0);//2Byteの場合のフォーマット
+
+  //コンソールに値を表示
+  console.log(value);
+
+  //HTMLに値を表示
+  document.getElementById('data_text').innerHTML = value;
+
+  document.getElementById('uuid_name').innerHTML = uuid;
+  document.getElementById('status').innerHTML = "read data"
+}
+
+
+//-------------------------------------------------
+//ボタンが押された時のイベント登録
+//--------------------------------------------------
+document.getElementById('read').addEventListener('click', function() {
+      ble.read('UUID1');
+});
+
+
+</script>
+</body>
+</html>
