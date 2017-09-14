@@ -34,7 +34,7 @@ Basic
 - [read](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/read.html)
 - [notify](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify.html)
 - [write](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/write.html)
-- disconnect
+- [disconnect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/disconnect.html)
 
 Advance
 - Multiple Connection
@@ -53,7 +53,7 @@ Basic
 - [read](http://jellyware.jp/kurage/bluejelly/read.html)
 - [notify](http://jellyware.jp/kurage/bluejelly/notify.html)
 - [write](http://jellyware.jp/kurage/bluejelly/write.html)
-- disconnect
+- [disconnect](http://jellyware.jp/kurage/bluejelly/disconnect.html)
 - [API Reference](http://jellyware.jp/kurage/bluejelly/api_reference.html)
 
 Advance
@@ -104,7 +104,7 @@ Basic
 - [read](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/read.html)
 - [notify](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify.html)
 - [write](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/write.html)
-- disconnect
+- [disconnect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/disconnect.html)
 
 Advance
 - 複数接続
@@ -123,7 +123,7 @@ Basic
 - [read](http://jellyware.jp/kurage/bluejelly/read.html)
 - [notify](http://jellyware.jp/kurage/bluejelly/notify.html)
 - [write](http://jellyware.jp/kurage/bluejelly/write.html)
-- disconnect
+- [disconnect](http://jellyware.jp/kurage/bluejelly/disconnect.html)
 - [API Reference](http://jellyware.jp/kurage/bluejelly/api_reference.html)
 
 Advance
