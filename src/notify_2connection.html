@@ -1,0 +1,119 @@
+<!doctype html>
+<!--
+Copyright 2017 JellyWare Inc. All Rights Reserved.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="BlueJelly">
+    <meta name="viewport" content="width=640, maximum-scale=1.0, user-scalable=yes">
+    <title>BlueJelly</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="bluejelly.js"></script>
+  </head>
+
+<body>
+<div class="container">
+    <div class="title margin">
+        <p id="title">BlueJelly Sample</p>
+        <p id="subtitle">複数デバイスとの通信</p>
+    </div>
+
+    <div class="contents margin">
+        <button id="startNotifications" class="button">Start Notify</button>
+        <button id="stopNotifications" class="button">Stop Notify</button>
+        <hr>
+        <div id="device_name"> </div>
+        <div id="uuid_name"> </div>
+        <div id="data_text"> </div>
+        <div id="status"> </div>
+    </div>
+
+    <div class="contents margin">
+        <button id="startNotifications2" class="button">Start Notify2</button>
+        <button id="stopNotifications2" class="button">Stop Notify2</button>
+        <hr>
+        <div id="device_name2"> </div>
+        <div id="uuid_name2"> </div>
+        <div id="data_text2"> </div>
+        <div id="status2"> </div>
+    </div>
+
+    <div class="footer margin">
+                For more information, see <a href="http://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
+    </div>
+</div>
+<script>
+//--------------------------------------------------
+//Global変数
+//--------------------------------------------------
+//BlueJellyのインスタンス生成
+var ble = new BlueJelly();
+var ble2 = new BlueJelly();
+
+
+//--------------------------------------------------
+//ロード時の処理
+//--------------------------------------------------
+window.onload = function () {
+  //UUIDの設定
+  ble.setUUID("UUID1", "713d0000-503e-4c75-ba94-3148f18d941e", "713d0002-503e-4c75-ba94-3148f18d941e");  //BLEnano SimpleControl rx_uuid
+  ble2.setUUID("UUID1", "713d0000-503e-4c75-ba94-3148f18d941e", "713d0002-503e-4c75-ba94-3148f18d941e");  //BLEnano SimpleControl rx_uuid
+}
+
+
+//--------------------------------------------------
+//Read後の処理：得られたデータの表示など行う
+//--------------------------------------------------
+ble.onRead = function (data, uuid){
+  //フォーマットに従って値を取得
+  value = data.getInt16(0);//2Byteの場合のフォーマット
+
+  //コンソールに値を表示
+  console.log(value);
+
+  //HTMLに値を表示
+  document.getElementById('data_text').innerHTML = value;
+  document.getElementById('uuid_name').innerHTML = uuid;
+  document.getElementById('status').innerHTML = "read data"
+}
+
+ble2.onRead = function (data, uuid){
+  //フォーマットに従って値を取得
+  value = data.getInt16(0);//2Byteの場合のフォーマット
+
+  //コンソールに値を表示
+  console.log(value);
+
+  //HTMLに値を表示
+  document.getElementById('data_text2').innerHTML = value;
+  document.getElementById('uuid_name2').innerHTML = uuid;
+  document.getElementById('status2').innerHTML = "read data"
+}
+
+
+//-------------------------------------------------
+//ボタンが押された時のイベント登録
+//--------------------------------------------------
+document.getElementById('startNotifications').addEventListener('click', function() {
+      ble.startNotify('UUID1');
+});
+
+document.getElementById('stopNotifications').addEventListener('click', function() {
+      ble.stopNotify('UUID1');
+});
+
+document.getElementById('startNotifications2').addEventListener('click', function() {
+      ble2.startNotify('UUID1');
+});
+
+document.getElementById('stopNotifications2').addEventListener('click', function() {
+      ble2.stopNotify('UUID1');
+});
+
+
+</script>
+</body>
+</html>

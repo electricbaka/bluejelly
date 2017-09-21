@@ -37,7 +37,7 @@ Basic
 - [disconnect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/disconnect.html)
 
 Advance
-- Multiple Connection
+- [Multiple Connection](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
 - [Graph](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
 - Sound
 - Voice Speech
@@ -57,7 +57,7 @@ Basic
 - [API Reference](http://jellyware.jp/kurage/bluejelly/api_reference.html)
 
 Advance
-- Multiple Connection
+- [Multiple Connection](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
 - [Graph](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
 - Sound
 - Voice Speech
@@ -107,7 +107,7 @@ Basic
 - [disconnect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/disconnect.html)
 
 Advance
-- 複数接続
+- [複数接続](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
 - [グラフ](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
 - 音声出力
 - 音声合成
@@ -127,7 +127,7 @@ Basic
 - [API Reference](http://jellyware.jp/kurage/bluejelly/api_reference.html)
 
 Advance
-- 複数接続
+- [複数接続](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
 - [グラフ](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
 - 音声出力
 - 音声合成
