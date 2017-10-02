@@ -39,7 +39,7 @@ Basic
 Advance
 - [Multiple Connection](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
 - [Graph](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
-- Sound
+- [Sound](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
 - Voice Speech
 - Silde
 
@@ -59,7 +59,7 @@ Basic
 Advance
 - [Multiple Connection](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
 - [Graph](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
-- Sound
+- [Sound](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
 - Voice Speech
 - Silde
 
@@ -109,7 +109,7 @@ Basic
 Advance
 - [複数接続](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
 - [グラフ](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
-- 音声出力
+- [音声出力](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
 - 音声合成
 - スライド
 
@@ -129,7 +129,7 @@ Basic
 Advance
 - [複数接続](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
 - [グラフ](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
-- 音声出力
+- [音声出力](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
 - 音声合成
 - スライド
 
