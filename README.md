@@ -40,7 +40,7 @@ Advance
 - [Multiple Connection](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
 - [Graph](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
 - [Sound](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
-- Voice Speech
+- [Voice Speech](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_speech.html)
 - Silde
 
 IoT
@@ -60,7 +60,7 @@ Advance
 - [Multiple Connection](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
 - [Graph](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
 - [Sound](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
-- Voice Speech
+- [Voice Speech](http://jellyware.jp/kurage/bluejelly/advance_speech.html)
 - Silde
 
 IoT
@@ -110,7 +110,7 @@ Advance
 - [複数接続](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
 - [グラフ](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
 - [音声出力](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
-- 音声合成
+- [音声合成](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_speech.html)
 - スライド
 
 IoT
@@ -130,7 +130,7 @@ Advance
 - [複数接続](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
 - [グラフ](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
 - [音声出力](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
-- 音声合成
+- [音声合成](http://jellyware.jp/kurage/bluejelly/advance_speech.html)
 - スライド
 
 IoT
