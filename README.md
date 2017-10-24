@@ -41,7 +41,7 @@ Advance
 - [Graph](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
 - [Sound](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
 - [Voice Speech](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_speech.html)
-- Silde
+- [Silde](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_slick.html)
 
 IoT
 - Sound with Wearable Gadget
@@ -61,7 +61,7 @@ Advance
 - [Graph](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
 - [Sound](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
 - [Voice Speech](http://jellyware.jp/kurage/bluejelly/advance_speech.html)
-- Silde
+- [Silde](http://jellyware.jp/kurage/bluejelly/advance_slick.html)
 
 IoT
 - Sound with Wearable Gadget
@@ -111,7 +111,7 @@ Advance
 - [グラフ](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
 - [音声出力](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
 - [音声合成](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_speech.html)
-- スライド
+- [スライド](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_slick.html)
 
 IoT
 - ウェアラブルガジェットで音を出そう
@@ -131,7 +131,7 @@ Advance
 - [グラフ](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
 - [音声出力](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
 - [音声合成](http://jellyware.jp/kurage/bluejelly/advance_speech.html)
-- スライド
+- [スライド](http://jellyware.jp/kurage/bluejelly/advance_slick.html)
 
 IoT
 - ウェアラブルガジェットで音を出そう
