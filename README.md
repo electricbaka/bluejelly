@@ -7,11 +7,12 @@
 BlueJelly is a wrapper library that can handle WebBluetoothAPI easily !
 You can program BLE with HTML and JavaScript only.
 
-![](http://jellyware.jp/kurage/img/cover/bluejelly/getting_started.png)
+![](https://jellyware.jp/kurage/img/cover/bluejelly/getting_started.png)
 
 Video：https://youtu.be/vIAnHCNDn3M
 
 ### Supported OS
+- Windows10(version1706 or later)
 - Mac(Requires OS X Yosemite or later)
 - Android(Android 6.0 Marshmallow or later)
 - Linux(Requires Kernel 3.19+ and BlueZ 5.41+ installed)
@@ -19,7 +20,6 @@ Video：https://youtu.be/vIAnHCNDn3M
 
 ### Unsupported OS
 - iOS
-- Windows
 
 ### Supported Browser
 Chrome only
@@ -29,19 +29,19 @@ No need
 
 ### Demo
 Basic
-- [scan](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/scan.html)
-- [connect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/connect.html)
-- [read](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/read.html)
-- [notify](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify.html)
-- [write](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/write.html)
-- [disconnect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/disconnect.html)
+- [scan](https://jellyware.jp/kurage/bluejelly/code/scan.html)
+- [connect](https://jellyware.jp/kurage/bluejelly/code/connect.html)
+- [read](https://jellyware.jp/kurage/bluejelly/code/read.html)
+- [notify](https://jellyware.jp/kurage/bluejelly/code/notify.html)
+- [write](https://jellyware.jp/kurage/bluejelly/code/write.html)
+- [disconnect](https://jellyware.jp/kurage/bluejelly/code/disconnect.html)
 
 Advance
-- [Multiple Connection](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
-- [Graph](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
-- [Sound](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
-- [Voice Speech](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_speech.html)
-- [Silde](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_slick.html)
+- [Multiple Connection](https://jellyware.jp/kurage/bluejelly/code/notify_2connection.html)
+- [Graph](https://jellyware.jp/kurage/bluejelly/code/advance_graph.html)
+- [Sound](https://jellyware.jp/kurage/bluejelly/code/advance_sound.html)
+- [Voice Speech](https://jellyware.jp/kurage/bluejelly/code/advance_speech_blenano2.html)
+- [Silde](https://jellyware.jp/kurage/bluejelly/code/advance_slick.html)
 
 IoT
 - Sound with Wearable Gadget
@@ -67,7 +67,7 @@ IoT
 - Sound with Wearable Gadget
 
 For details, please refer to this page.
-http://jellyware.jp/kurage/bluejelly/getting_started.html
+https://jellyware.jp/kurage/bluejelly/getting_started.html
 
 
 ---
@@ -77,11 +77,12 @@ http://jellyware.jp/kurage/bluejelly/getting_started.html
 BlueJellyはWeb Bluetooth APIを簡単に扱うことができるラッパーライブラリです。
 HTMLとJavaScriptだけでBLEをプログラミングできます。
 
-![](http://jellyware.jp/kurage/img/cover/bluejelly/getting_started.png)
+![](https://jellyware.jp/kurage/img/cover/bluejelly/getting_started.png)
 
 動画：https://youtu.be/vIAnHCNDn3M
 
 ### 対応OS
+- Windows10（version1706以降）
 - Mac (OS X Yosemite以降)
 - Android (Android 6.0 Marshmallow以降)
 - Linux (Kernel 3.19以上 かつ BlueZ 5.41以上)
@@ -89,7 +90,6 @@ HTMLとJavaScriptだけでBLEをプログラミングできます。
 
 ### 非対応OS
 - iOS
-- Windows
 
 ### 対応ブラウザ
 Chromeのみ
@@ -99,19 +99,19 @@ Chromeのみ
 
 ### デモ
 Basic
-- [scan](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/scan.html)
-- [connect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/connect.html)
-- [read](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/read.html)
-- [notify](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify.html)
-- [write](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/write.html)
-- [disconnect](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/disconnect.html)
+- [scan](https://jellyware.jp/kurage/bluejelly/code/scan.html)
+- [connect](https://jellyware.jp/kurage/bluejelly/code/connect.html)
+- [read](https://jellyware.jp/kurage/bluejelly/code/read.html)
+- [notify](https://jellyware.jp/kurage/bluejelly/code/notify.html)
+- [write](https://jellyware.jp/kurage/bluejelly/code/write.html)
+- [disconnect](https://jellyware.jp/kurage/bluejelly/code/disconnect.html)
 
 Advance
-- [複数接続](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/notify_2connection.html)
-- [グラフ](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_graph.html)
-- [音声出力](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_sound.html)
-- [音声合成](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_speech.html)
-- [スライド](https://secure1689.sakura.ne.jp/kurage.jellyware.jp/bluejelly/advance_slick.html)
+- [複数接続](https://jellyware.jp/kurage/bluejelly/code/notify_2connection.html)
+- [グラフ](https://jellyware.jp/kurage/bluejelly/code/advance_graph.html)
+- [音声出力](https://jellyware.jp/kurage/bluejelly/code/advance_sound.html)
+- [音声合成](https://jellyware.jp/kurage/bluejelly/code/advance_speech_blenano2.html)
+- [スライド](https://jellyware.jp/kurage/bluejelly/code/advance_slick.html)
 
 IoT
 - ウェアラブルガジェットで音を出そう
@@ -137,4 +137,4 @@ IoT
 - ウェアラブルガジェットで音を出そう
 
 詳細はこちらのページを参照してください。
-http://jellyware.jp/kurage/bluejelly/getting_started.html
+https://jellyware.jp/kurage/bluejelly/getting_started.html
