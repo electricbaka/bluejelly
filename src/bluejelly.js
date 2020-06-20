@@ -4,8 +4,8 @@ BlueJelly.js
 ============================================================
 Web Bluetooth API Wrapper Library
 
-Copyright 2017 JellyWare Inc.
-http://jellyware.jp/
+Copyright 2017-2020 JellyWare Inc.
+https://jellyware.jp/
 
 GitHub
 https://github.com/electricbaka/bluejelly
@@ -255,3 +255,54 @@ BlueJelly.prototype.reset= function() {
   this.clear();
   this.onReset();
 }
+
+
+//--------------------------------------------------
+//micro:bit UUID(class constant)
+//--------------------------------------------------
+Object.defineProperty(BlueJelly, 'MICROBIT_BASE_UUID', {value: "e95d0000-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_SERVICESGENERIC_ACCESS', {value: "00001800-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_DEVICE_NAME', {value: "00002a00-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_APPEARANCE', {value: "00002a01-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_PERIPHERAL_PREFERRED_CONNECTION_PARAMETERS', {value: "00002a04-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_GENERIC_ATTRIBUTE', {value: "00001801-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_SERVICE_CHANGED', {value: "2a05", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_DEVICE_INFORMATION', {value: "0000180a-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MODEL_NUMBER_STRING', {value: "00002a24-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_SERIAL_NUMBER_STRING', {value: "00002a25-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_HARDWARE_REVISION_STRING', {value: "00002a27-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_FIRMWARE_REVISION_STRING', {value: "00002a26-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MANUFACTURER_NAME_STRING', {value: "00002a29-0000-1000-8000-00805f9b34fb", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_ACCELEROMETER_SERVICE', {value: "e95d0753-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_ACCELEROMETER_DATA', {value: "e95dca4b-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_ACCELEROMETER_PERIOD', {value: "e95dfb24-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MAGNETOMETER_SERVICE', {value: "e95df2d8-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MAGNETOMETER_DATA', {value: "e95dfb11-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MAGNETOMETER_PERIOD', {value: "e95d386c-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MAGNETOMETER_BEARING', {value: "e95d9715-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MAGNETOMETER_CALIBRATION', {value: "e95db358-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_BUTTON_SERVICE', {value: "e95d9882-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_BUTTON_A_STATE', {value: "e95dda90-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_BUTTON_B_STATE', {value: "e95dda91-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_IO_PIN_SERVICE', {value: "e95d127b-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_PIN_DATA', {value: "e95d8d00-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_PIN_AD_CONFIGURATION', {value: "e95d5899-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_PIN_IO_CONFIGURATION', {value: "e95db9fe-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_PWM_CONTROL', {value: "e95dd822-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_LED_SERVICE', {value: "e95dd91d-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_LED_MATRIX_STATE', {value: "e95d7b77-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_LED_TEXT', {value: "e95d93ee-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_SCROLLING_DELAY', {value: "e95d0d2d-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_EVENT_SERVICE', {value: "e95d93af-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MICROBIT_REQUIREMENTS', {value: "e95db84c-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_MICROBIT_EVENT', {value: "e95d9775-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_CLIENT_REQUIREMENTS', {value: "e95d23c4-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_CLIENT_EVENT', {value: "e95d5404-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_DFU_CONTROL_SERVICE', {value: "e95d93b0-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_DFU_CONTROL', {value: "e95d93b1-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_TEMPERATURE_SERVICE', {value: "e95d6100-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_TEMPERATURE', {value: "e95d9250-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_TEMPERATURE_PERIOD', {value: "e95d1b25-251d-470a-a062-fa1922dfa9a8", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_UART_SERVICE', {value: "6e400001-b5a3-f393-e0a9-e50e24dcca9e", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_TX_CHARACTERISTIC', {value: "6e400002-b5a3-f393-e0a9-e50e24dcca9e", writable: false});
+Object.defineProperty(BlueJelly, 'MICROBIT_RX_CHARACTERISTIC', {value: "6e400003-b5a3-f393-e0a9-e50e24dcca9e", writable: false});
