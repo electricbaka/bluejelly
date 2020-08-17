@@ -18,11 +18,11 @@ Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
 <div class="container">
     <div class="title margin">
         <p id="title">BlueJelly Sample</p>
-        <p id="subtitle">Writeでデータ書き込み</p>
+        <p id="subtitle">WriteでUART送信</p>
     </div>
 
     <div class="contents margin">
-        <input id="write_value" class="button" value="BlueJelly" size="20">
+        <input id="write_value" class="button" value="up" size="20">
         <button id="write" class="button">Write</button>
         <hr>
         <div id="device_name"> </div>
@@ -47,7 +47,7 @@ const ble = new BlueJelly();
 //--------------------------------------------------
 window.onload = function () {
   //UUIDの設定
-  ble.setUUID("UUID1", BlueJelly.MICROBIT_LED_SERVICE, BlueJelly.MICROBIT_LED_TEXT);
+  ble.setUUID("UUID1", BlueJelly.MICROBIT_UART_SERVICE, BlueJelly.MICROBIT_RX_CHARACTERISTIC);
 }
 
 
@@ -86,7 +86,7 @@ document.getElementById('write').addEventListener('click', function() {
   //フォーマットに従って値を変換
   const textEncoder = new TextEncoder();
   const text_data = document.getElementById('write_value').value;
-  const text_data_encoded = textEncoder.encode(text_data);
+  const text_data_encoded = textEncoder.encode(text_data + '\n');
 
   //write
   ble.write('UUID1', text_data_encoded);

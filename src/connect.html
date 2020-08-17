@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-Copyright 2017 JellyWare Inc. All Rights Reserved.
+Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
 -->
 <html>
   <head>
@@ -31,7 +31,7 @@ Copyright 2017 JellyWare Inc. All Rights Reserved.
 
     </div>
     <div class="footer margin">
-        For more information, see <a href="http://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
+        For more information, see <a href="https://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
     </div>
 </div>
 <script>
@@ -39,7 +39,7 @@ Copyright 2017 JellyWare Inc. All Rights Reserved.
 //Global変数
 //--------------------------------------------------
 //BlueJellyのインスタンス生成
-var ble = new BlueJelly();
+const ble = new BlueJelly();
 
 
 //--------------------------------------------------
@@ -47,7 +47,7 @@ var ble = new BlueJelly();
 //--------------------------------------------------
 window.onload = function () {
   //UUIDの設定
-  ble.setUUID("UUID1", "713d0000-503e-4c75-ba94-3148f18d941e", "713d0002-503e-4c75-ba94-3148f18d941e");  //BLEnano SimpleControl rx_uuid
+  ble.setUUID("UUID1", BlueJelly.MICROBIT_UART_SERVICE, BlueJelly.MICROBIT_TX_CHARACTERISTIC);
 }
 
 

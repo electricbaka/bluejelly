@@ -1,0 +1,161 @@
+<!doctype html>
+<!--
+Copyright 2017 JellyWare Inc. All Rights Reserved.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="BlueJelly Sample">
+    <meta name="viewport" content="width=640, maximum-scale=1.0, user-scalable=yes">
+    <title>BLE UUID Converter for mbed</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+    html, body {
+    	height: 100%;
+    	width: 100%;
+    	font-family: 'Lato', Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    	min-width: 640px;
+    	position: relative;
+      margin: 0px;
+    }
+
+    h1 {
+        padding: 0.5em 0.7em;
+        background-color: #ff8319;
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .contents{
+     margin:8px;
+    }
+
+    .contents_main{
+      color: #ff8319;
+    }
+
+    #footer{
+      font-size:x-small;
+      margin-top:5em;
+      padding-top:1em;
+      border-top: 1px solid #656565;
+    }
+
+    a { text-decoration: none; }
+    a:link { color: #656565; }
+    a:visited { color: #656565; }
+
+    </style>
+  </head>
+<body>
+<h1>BLE UUID Converter for mbed</h1>
+<div class="contents">
+  <div class="contents_main">
+
+  <p>
+    <div>Get UUID</div>
+    <a href="https://www.uuidgenerator.net/" target="_blank">https://www.uuidgenerator.net/</a>
+  </p>
+
+<p>
+  <div>Input UUID</div>
+  <input type="text" id="inputUUID" style="width:600px;">
+  <br>
+  <button id="convert">Convert</button>
+  <button id="clear">Clear</button>
+</p>
+<p>
+  <div>Copy UUID</div>
+  <input type="text" id="outputUUID" style="width:600px;" value="xxxx" readonly="readonly" >
+</p>
+</div>
+
+  <div id="footer"><a href="http://jellyware.jp/" target="_blank">jellyware.jp</a></div>
+</div>
+<script>
+//--------------------------------------------------
+//Global variable
+//--------------------------------------------------
+
+
+//-------------------------------------------------
+//Click Event
+//--------------------------------------------------
+document.getElementById('convert').addEventListener('click', convert_func);
+document.getElementById('clear').addEventListener('click', clear_func);
+
+
+//--------------------------------------------------
+//onLoad
+//--------------------------------------------------
+window.onload = function () {
+  //初期文字列
+  document.getElementById('inputUUID').value = "0000180f-0000-1000-8000-00805F9B34FB"
+  convert_func();
+}
+
+
+//--------------------------------------------------
+//Convert function
+//--------------------------------------------------
+function convert_func(){
+  var i;
+	var count = 0;
+  var str = [];
+  var str_disp;
+
+  //get inputUUID
+  str = document.getElementById('inputUUID').value;
+
+  //remove "-"
+  str = str.replace( /-/g , "" ) ;
+
+  //if odd, add space
+  if(str.length%2 == 1)
+    str += " ";
+
+  //header
+  str_disp = "{ ";
+
+  //contents
+  for(i=0; i<str.length/2; i++)
+  {
+      str_disp += "0x" + str[2*i] + str[2*i + 1];
+
+      if(i < str.length/2 -1 )
+        str_disp += ", ";
+  }
+
+  //footer
+  str_disp += " } ;"
+
+  //display UUID
+  document.getElementById('outputUUID').value = str_disp
+
+  //focus
+  document.getElementById('outputUUID').focus();
+
+  //select
+  document.getElementById('outputUUID').select();
+}
+
+
+//--------------------------------------------------
+//Clear function
+//--------------------------------------------------
+function clear_func(){
+  document.getElementById('inputUUID').value = "";
+  document.getElementById('outputUUID').value = "";
+
+  //focus
+  document.getElementById('inputUUID').focus();
+}
+
+
+</script>
+</body>
+</html>

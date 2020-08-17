@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-Copyright 2017 JellyWare Inc. All Rights Reserved.
+Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
 -->
 <html>
   <head>
@@ -32,7 +32,7 @@ Copyright 2017 JellyWare Inc. All Rights Reserved.
 
     </div>
     <div class="footer margin">
-                For more information, see <a href="http://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
+                For more information, see <a href="https://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
     </div>
 </div>
 <script>
@@ -40,13 +40,13 @@ Copyright 2017 JellyWare Inc. All Rights Reserved.
 //Global変数
 //--------------------------------------------------
 //BlueJellyのインスタンス生成
-var ble = new BlueJelly();
+const ble = new BlueJelly();
 
 //Speech
-var speech = new SpeechSynthesisUtterance();//インスタンス生成
+const speech = new SpeechSynthesisUtterance();//インスタンス生成
 speech.lang = 'ja-JP';//言語の設定
-var old_value = 0;
-var timer_id;
+let old_value = 0;
+let timer_id;
 
 
 //--------------------------------------------------
@@ -54,7 +54,7 @@ var timer_id;
 //--------------------------------------------------
 window.onload = function () {
   //UUIDの設定
-  ble.setUUID("UUID1", "713d0000-503e-4c75-ba94-3148f18d941e", "713d0002-503e-4c75-ba94-3148f18d941e");  //BLEnano SimpleControl rx_uuid
+  ble.setUUID("UUID1", BlueJelly.MICROBIT_UART_SERVICE, BlueJelly.MICROBIT_TX_CHARACTERISTIC);
 }
 
 
@@ -83,28 +83,32 @@ ble.onConnectGATT = function (uuid) {
 //--------------------------------------------------
 ble.onRead = function (data, uuid){
   //フォーマットに従って値を取得
-  value = data.getInt16(0);//2Byteの場合のフォーマット
+  let value = "";
+  for(let i = 0; i < data.byteLength; i++){
+    value = value + String.fromCharCode(data.getInt8(i));
+  }
+
+  //数値化
+  value = Number(value);
 
   //コンソールに値を表示
   console.log(value);
 
-  //HTMLに値を表示
+  //HTMLにデータを表示
   document.getElementById('data_text').innerHTML = value;
-
   document.getElementById('uuid_name').innerHTML = uuid;
   document.getElementById('status').innerHTML = "read data"
 
-  //speech処理：値に変化があったら、Speech関数を500ms後に呼び出す
-  //           前回呼び出しがまだ実行されてない場合はタイマークリア
-  if(value != old_value)
+  //speech処理
+  //直前の値に対し±1を超える変化があったら、Speech関数を500ms後に呼び出す
+  //ただし、その後500ms以内にさらに変化があった場合は無効となる
+  if(value < old_value - 1 || value > old_value + 1)
   {
     old_value = value;
     speech.text = value;
-
     clearTimeout(timer_id);
-    timer_id = setTimeout(speech_later,500);
+    timer_id = setTimeout(speech_later, 500);
   }
-
 }
 
 
@@ -113,7 +117,10 @@ ble.onRead = function (data, uuid){
 //--------------------------------------------------
 function speech_later()
 {
+  //現在読み上げ中であれば、それはキャンセル
   speechSynthesis.cancel();
+
+  //読み上げ
   speechSynthesis.speak(speech);
 }
 
@@ -144,10 +151,18 @@ ble.onStopNotify = function(uuid){
 //ボタンが押された時のイベント登録
 //--------------------------------------------------
 document.getElementById('startNotifications').addEventListener('click', function() {
+      //読み上げ
+      speech.text = "スタートします";
+      speechSynthesis.speak(speech);
+
       ble.startNotify('UUID1');
 });
 
 document.getElementById('stopNotifications').addEventListener('click', function() {
+      //読み上げ
+      speech.text = "ストップします";
+      speechSynthesis.speak(speech);
+
       ble.stopNotify('UUID1');
 });
 

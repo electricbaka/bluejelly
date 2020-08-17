@@ -11,30 +11,14 @@ Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
     <title>BlueJelly</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
     <script type="text/javascript" src="bluejelly.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   </head>
 
 <body>
 <div class="container">
     <div class="title margin">
         <p id="title">BlueJelly Sample</p>
-        <p id="subtitle">Slide Control by BLE</p>
-    </div>
-
-    <div class="div_slide">
-      <div><img src="https://placehold.jp/FF9900/FFFFFF/640x396.png?text=1"></div>
-      <div><img src="https://placehold.jp/CCFF00/FFFFFF/640x396.png?text=2"></div>
-      <div><img src="https://placehold.jp/00FF66/FFFFFF/640x396.png?text=3"></div>
-      <div><img src="https://placehold.jp/00FFFF/FFFFFF/640x396.png?text=4"></div>
-      <div><img src="https://placehold.jp/0066FF/FFFFFF/640x396.png?text=5"></div>
-      <div><img src="https://placehold.jp/3300FF/FFFFFF/640x396.png?text=6"></div>
-      <div><img src="https://placehold.jp/CC00FF/FFFFFF/640x396.png?text=7"></div>
-      <div><img src="https://placehold.jp/FF0000/FFFFFF/640x396.png?text=8"></div>
+        <p id="subtitle">NotifyでUART受信</p>
     </div>
 
     <div class="contents margin">
@@ -57,22 +41,6 @@ Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
 //--------------------------------------------------
 //BlueJellyのインスタンス生成
 const ble = new BlueJelly();
-
-
-//--------------------------------------------------
-//slide処理
-//--------------------------------------------------
-$(document).ready(function(){
-  $('.div_slide').slick({
-	 slidesToShow: 1,
-	 slidesToScroll: 1,
-	 arrows: false,
-	 dots: true,
-	 focusOnSelect: true,
-   autoplay: false,
-   speed: 300
-  });
-});
 
 
 //--------------------------------------------------
@@ -124,13 +92,6 @@ ble.onRead = function (data, uuid){
   document.getElementById('data_text').innerHTML = value;
   document.getElementById('uuid_name').innerHTML = uuid;
   document.getElementById('status').innerHTML = "read data"
-
-  //-45°～45°を超える傾きでスライド動作
-  if(value > 45){
-    $('.div_slide').slick('slickNext');
-  }else if(value < -45){
-    $('.div_slide').slick('slickPrev');
-  }
 }
 
 

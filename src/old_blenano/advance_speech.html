@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
+Copyright 2017 JellyWare Inc. All Rights Reserved.
 -->
 <html>
   <head>
@@ -11,30 +11,14 @@ Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
     <title>BlueJelly</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
     <script type="text/javascript" src="bluejelly.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   </head>
 
 <body>
 <div class="container">
     <div class="title margin">
         <p id="title">BlueJelly Sample</p>
-        <p id="subtitle">Slide Control by BLE</p>
-    </div>
-
-    <div class="div_slide">
-      <div><img src="https://placehold.jp/FF9900/FFFFFF/640x396.png?text=1"></div>
-      <div><img src="https://placehold.jp/CCFF00/FFFFFF/640x396.png?text=2"></div>
-      <div><img src="https://placehold.jp/00FF66/FFFFFF/640x396.png?text=3"></div>
-      <div><img src="https://placehold.jp/00FFFF/FFFFFF/640x396.png?text=4"></div>
-      <div><img src="https://placehold.jp/0066FF/FFFFFF/640x396.png?text=5"></div>
-      <div><img src="https://placehold.jp/3300FF/FFFFFF/640x396.png?text=6"></div>
-      <div><img src="https://placehold.jp/CC00FF/FFFFFF/640x396.png?text=7"></div>
-      <div><img src="https://placehold.jp/FF0000/FFFFFF/640x396.png?text=8"></div>
+        <p id="subtitle">Speech by SpeechSynthesis</p>
     </div>
 
     <div class="contents margin">
@@ -48,7 +32,7 @@ Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
 
     </div>
     <div class="footer margin">
-                For more information, see <a href="https://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
+                For more information, see <a href="http://jellyware.jp/kurage" target="_blank">jellyware.jp</a> and <a href="https://github.com/electricbaka/bluejelly" target="_blank">GitHub</a> !
     </div>
 </div>
 <script>
@@ -56,23 +40,13 @@ Copyright 2017-2020 JellyWare Inc. All Rights Reserved.
 //Global変数
 //--------------------------------------------------
 //BlueJellyのインスタンス生成
-const ble = new BlueJelly();
+var ble = new BlueJelly();
 
-
-//--------------------------------------------------
-//slide処理
-//--------------------------------------------------
-$(document).ready(function(){
-  $('.div_slide').slick({
-	 slidesToShow: 1,
-	 slidesToScroll: 1,
-	 arrows: false,
-	 dots: true,
-	 focusOnSelect: true,
-   autoplay: false,
-   speed: 300
-  });
-});
+//Speech
+var speech = new SpeechSynthesisUtterance();//インスタンス生成
+speech.lang = 'ja-JP';//言語の設定
+var old_value = 0;
+var timer_id;
 
 
 //--------------------------------------------------
@@ -80,7 +54,7 @@ $(document).ready(function(){
 //--------------------------------------------------
 window.onload = function () {
   //UUIDの設定
-  ble.setUUID("UUID1", BlueJelly.MICROBIT_UART_SERVICE, BlueJelly.MICROBIT_TX_CHARACTERISTIC);
+  ble.setUUID("UUID1", "713d0000-503e-4c75-ba94-3148f18d941e", "713d0002-503e-4c75-ba94-3148f18d941e");  //BLEnano SimpleControl rx_uuid
 }
 
 
@@ -109,28 +83,38 @@ ble.onConnectGATT = function (uuid) {
 //--------------------------------------------------
 ble.onRead = function (data, uuid){
   //フォーマットに従って値を取得
-  let value = "";
-  for(let i = 0; i < data.byteLength; i++){
-    value = value + String.fromCharCode(data.getInt8(i));
-  }
-
-  //数値化
-  value = Number(value);
+  value = data.getInt16(0);//2Byteの場合のフォーマット
 
   //コンソールに値を表示
   console.log(value);
 
-  //HTMLにデータを表示
+  //HTMLに値を表示
   document.getElementById('data_text').innerHTML = value;
+
   document.getElementById('uuid_name').innerHTML = uuid;
   document.getElementById('status').innerHTML = "read data"
 
-  //-45°～45°を超える傾きでスライド動作
-  if(value > 45){
-    $('.div_slide').slick('slickNext');
-  }else if(value < -45){
-    $('.div_slide').slick('slickPrev');
+  //speech処理：値に変化があったら、Speech関数を500ms後に呼び出す
+  //           前回呼び出しがまだ実行されてない場合はタイマークリア
+  if(value != old_value)
+  {
+    old_value = value;
+    speech.text = value;
+
+    clearTimeout(timer_id);
+    timer_id = setTimeout(speech_later,500);
   }
+
+}
+
+
+//--------------------------------------------------
+//Speech関数：連続読み上げを防止するためにタイマー呼び出し
+//--------------------------------------------------
+function speech_later()
+{
+  speechSynthesis.cancel();
+  speechSynthesis.speak(speech);
 }
 
 

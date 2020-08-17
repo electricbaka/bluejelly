@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*************************** RESET ***************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/*************************** RESET ***************************/
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Lato', Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	min-width: 640px;
+	position: relative;
+  background-color: #f0f0f0;
+}
+
+hr{
+  border-width: 1px;
+  border-color: #fff;
+  border-style: solid;
+  margin: 20px 0px 20px 0px;
+}
+
+.container{
+  margin: auto;
+  width: 100%;
+  min-height: 100%;
+  max-width: 640px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  background-color: #f0f0f0;
+  position: relative;
+}
+.title{
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0px 20px 0px;
+}
+
+.contents{
+  padding: 25px 0px 100px 0px;
+}
+
+.footer{
+  width: 100%;
+  font-size:12px;
+  position: absolute;
+  bottom: 0px;
+  height: 60px;
+  color: #9a9a9a;
+}
+
+.margin{
+  border-left:  70px;
+  border-right: 70px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.button{
+  border-width: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  background-color: #fff;
+  padding: 5px 20px 5px 20px;
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px;
+}
+.button:hover{
+  border-color: #ccc;
+}
+.button:active{
+  background-color: #f0f0f0;
+}
+
+#chart{
+	margin-bottom: 20px;
+}
+
+#title{
+  color:#ff8319;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+#subtitle{
+  color:#808080;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#data_text, #data_text2{
+  color:#448aff;
+  font-size:72px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+#device_name, #device_name2{
+  color:#ff8319;
+  font-size:36px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+#uuid_name, #uuid_name2{
+  color:#ff8319;
+	font-size:14px;
+  font-weight: 300;
+}
+
+#status, #status2{
+	color:#448aff;
+	font-size:14px;
+  font-weight: 300;
+}
+
+
+
+a { text-decoration: none; }
+a:link { color: #9a9a9a; }
+a:visited { color: #9a9a9a; }

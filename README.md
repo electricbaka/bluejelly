@@ -29,45 +29,45 @@ No need
 
 ### Demo
 Basic
-- [scan](https://jellyware.jp/kurage/bluejelly/code/scan.html)
-- [connect](https://jellyware.jp/kurage/bluejelly/code/connect.html)
-- [read](https://jellyware.jp/kurage/bluejelly/code/read.html)
-- [notify](https://jellyware.jp/kurage/bluejelly/code/notify.html)
-- [write](https://jellyware.jp/kurage/bluejelly/code/write.html)
-- [disconnect](https://jellyware.jp/kurage/bluejelly/code/disconnect.html)
+- [scan](https://jellyware.jp/kuragemd_assets/code/bluejelly/scan.html)
+- [connect](https://jellyware.jp/kuragemd_assets/code/bluejelly/connect.html)
+- [read](https://jellyware.jp/kuragemd_assets/code/bluejelly/read.html)
+- [notify](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify.html)
+- [write](https://jellyware.jp/kuragemd_assets/code/bluejelly/write.html)
+- [disconnect](https://jellyware.jp/kuragemd_assets/code/bluejelly/disconnect.html)
 
 Advance
-- [Multiple Connection](https://jellyware.jp/kurage/bluejelly/code/notify_2connection.html)
-- [Graph](https://jellyware.jp/kurage/bluejelly/code/advance_graph.html)
-- [Sound](https://jellyware.jp/kurage/bluejelly/code/advance_sound.html)
-- [Voice Speech](https://jellyware.jp/kurage/bluejelly/code/advance_speech_blenano2.html)
-- [Silde](https://jellyware.jp/kurage/bluejelly/code/advance_slick.html)
+- [Multiple Connection](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_2connection.html)
+- [Graph](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_graph.html)
+- [Sound](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_sound.html)
+- [Voice Speech](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech_blenano2.html)
+- [Silde](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html)
 
 IoT
 - Sound with Wearable Gadget
 
 ### Document (Japanese)
 Basic
-- [scan](http://jellyware.jp/kurage/bluejelly/scan.html)
-- [connect](http://jellyware.jp/kurage/bluejelly/connect.html)
-- [read](http://jellyware.jp/kurage/bluejelly/read.html)
-- [notify](http://jellyware.jp/kurage/bluejelly/notify.html)
-- [write](http://jellyware.jp/kurage/bluejelly/write.html)
-- [disconnect](http://jellyware.jp/kurage/bluejelly/disconnect.html)
-- [API Reference](http://jellyware.jp/kurage/bluejelly/api_reference.html)
+- [scan](http://jellyware.jp/kuragemd/bluejelly/scan.html)
+- [connect](http://jellyware.jp/kuragemd/bluejelly/connect.html)
+- [read](http://jellyware.jp/kuragemd/bluejelly/read.html)
+- [notify](http://jellyware.jp/kuragemd/bluejelly/notify.html)
+- [write](http://jellyware.jp/kuragemd/bluejelly/write.html)
+- [disconnect](http://jellyware.jp/kuragemd/bluejelly/disconnect.html)
+- [API Reference](http://jellyware.jp/kuragemd/bluejelly/api_reference.html)
 
 Advance
-- [Multiple Connection](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
-- [Graph](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
-- [Sound](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
-- [Voice Speech](http://jellyware.jp/kurage/bluejelly/advance_speech.html)
-- [Silde](http://jellyware.jp/kurage/bluejelly/advance_slick.html)
+- [Multiple Connection](http://jellyware.jp/kuragemd/bluejelly/multiple_connections.html)
+- [Graph](http://jellyware.jp/kuragemd/bluejelly/advance_graph.html)
+- [Sound](http://jellyware.jp/kuragemd/bluejelly/advance_sound.html)
+- [Voice Speech](http://jellyware.jp/kuragemd/bluejelly/advance_speech.html)
+- [Silde](http://jellyware.jp/kuragemd/bluejelly/advance_slick.html)
 
 IoT
 - Sound with Wearable Gadget
 
 For details, please refer to this page.
-https://jellyware.jp/kurage/bluejelly/getting_started.html
+https://jellyware.jp/kuragemd/bluejelly/getting_started.html
 
 
 ---
@@ -99,42 +99,42 @@ Chromeのみ
 
 ### デモ
 Basic
-- [scan](https://jellyware.jp/kurage/bluejelly/code/scan.html)
-- [connect](https://jellyware.jp/kurage/bluejelly/code/connect.html)
-- [read](https://jellyware.jp/kurage/bluejelly/code/read.html)
-- [notify](https://jellyware.jp/kurage/bluejelly/code/notify.html)
-- [write](https://jellyware.jp/kurage/bluejelly/code/write.html)
-- [disconnect](https://jellyware.jp/kurage/bluejelly/code/disconnect.html)
+- [scan](https://jellyware.jp/kuragemd_assets/code/bluejelly/scan.html)
+- [connect](https://jellyware.jp/kuragemd_assets/code/bluejelly/connect.html)
+- [read](https://jellyware.jp/kuragemd_assets/code/bluejelly/read.html)
+- [notify](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify.html)
+- [write](https://jellyware.jp/kuragemd_assets/code/bluejelly/write.html)
+- [disconnect](https://jellyware.jp/kuragemd_assets/code/bluejelly/disconnect.html)
 
 Advance
-- [複数接続](https://jellyware.jp/kurage/bluejelly/code/notify_2connection.html)
-- [グラフ](https://jellyware.jp/kurage/bluejelly/code/advance_graph.html)
-- [音声出力](https://jellyware.jp/kurage/bluejelly/code/advance_sound.html)
-- [音声合成](https://jellyware.jp/kurage/bluejelly/code/advance_speech_blenano2.html)
-- [スライド](https://jellyware.jp/kurage/bluejelly/code/advance_slick.html)
+- [複数接続](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_2connection.html)
+- [グラフ](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_graph.html)
+- [音声出力](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_sound.html)
+- [音声合成](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech_blenano2.html)
+- [スライド](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html)
 
 IoT
-- ウェアラブルガジェットで音を出そう
+- Sound with Wearable Gadget
 
 ### 資料
 Basic
-- [scan](http://jellyware.jp/kurage/bluejelly/scan.html)
-- [connect](http://jellyware.jp/kurage/bluejelly/connect.html)
-- [read](http://jellyware.jp/kurage/bluejelly/read.html)
-- [notify](http://jellyware.jp/kurage/bluejelly/notify.html)
-- [write](http://jellyware.jp/kurage/bluejelly/write.html)
-- [disconnect](http://jellyware.jp/kurage/bluejelly/disconnect.html)
-- [API Reference](http://jellyware.jp/kurage/bluejelly/api_reference.html)
+- [scan](http://jellyware.jp/kuragemd/bluejelly/scan.html)
+- [connect](http://jellyware.jp/kuragemd/bluejelly/connect.html)
+- [read](http://jellyware.jp/kuragemd/bluejelly/read.html)
+- [notify](http://jellyware.jp/kuragemd/bluejelly/notify.html)
+- [write](http://jellyware.jp/kuragemd/bluejelly/write.html)
+- [disconnect](http://jellyware.jp/kuragemd/bluejelly/disconnect.html)
+- [API Reference](http://jellyware.jp/kuragemd/bluejelly/api_reference.html)
 
 Advance
-- [複数接続](http://jellyware.jp/kurage/bluejelly/multiple_connections.html)
-- [グラフ](http://jellyware.jp/kurage/bluejelly/advance_graph.html)
-- [音声出力](http://jellyware.jp/kurage/bluejelly/advance_sound.html)
-- [音声合成](http://jellyware.jp/kurage/bluejelly/advance_speech.html)
-- [スライド](http://jellyware.jp/kurage/bluejelly/advance_slick.html)
+- [複数接続](http://jellyware.jp/kuragemd/bluejelly/multiple_connections.html)
+- [グラフ](http://jellyware.jp/kuragemd/bluejelly/advance_graph.html)
+- [音声出力](http://jellyware.jp/kuragemd/bluejelly/advance_sound.html)
+- [音声合成](http://jellyware.jp/kuragemd/bluejelly/advance_speech.html)
+- [スライド](http://jellyware.jp/kuragemd/bluejelly/advance_slick.html)
 
 IoT
 - ウェアラブルガジェットで音を出そう
 
 詳細はこちらのページを参照してください。
-https://jellyware.jp/kurage/bluejelly/getting_started.html
+https://jellyware.jp/kuragmd/bluejelly/getting_started.html
