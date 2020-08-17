@@ -40,7 +40,7 @@ Advance
 - [Multiple Connection](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_2connection.html)
 - [Graph](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_graph.html)
 - [Sound](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_sound.html)
-- [Voice Speech](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech_blenano2.html)
+- [Voice Speech](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech.html)
 - [Silde](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html)
 
 IoT
@@ -110,7 +110,7 @@ Advance
 - [複数接続](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_2connection.html)
 - [グラフ](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_graph.html)
 - [音声出力](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_sound.html)
-- [音声合成](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech_blenano2.html)
+- [音声合成](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech.html)
 - [スライド](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html)
 
 IoT
