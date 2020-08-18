@@ -7,9 +7,10 @@
 BlueJelly is a wrapper library that can handle WebBluetoothAPI easily !
 You can program BLE with HTML and JavaScript only.
 
-![](https://jellyware.jp/kurage/img/cover/bluejelly/getting_started.png)
+![](https://jellyware.jp/kuragemd_assets/thumbnail/bluejelly/getting_started.jpg)
 
-Video：https://youtu.be/vIAnHCNDn3M
+Video：https://youtu.be/lngnalPv-eY
+
 
 ### Supported OS
 - Windows10(version1706 or later)
@@ -29,8 +30,6 @@ No need
 
 ### Demo & Document
 
-
-
 | Type | Demo | Document |
 | -------- | -------- | -------- |
 | Basic | [Scan](https://jellyware.jp/kuragemd_assets/code/bluejelly/scan.html) | [Scan](http://jellyware.jp/kuragemd/bluejelly/scan.html)|
@@ -44,22 +43,23 @@ No need
 | Advanced | [Graph](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_graph.html) | [Graph](http://jellyware.jp/kuragemd/bluejelly/advance_graph.html)  |
 | Advanced | [Sound](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_sound.html) | [Sound](http://jellyware.jp/kuragemd/bluejelly/advance_sound.html)  |
 | Advanced | [Voice Speech](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech.html) | [Voice Speech](http://jellyware.jp/kuragemd/bluejelly/advance_speech.html)  |
-| Advanced | [Silde](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html) | [Silde](http://jellyware.jp/kuragemd/bluejelly/advance_slick.html) |
+| Advanced | [Slide](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html) | [Slide](http://jellyware.jp/kuragemd/bluejelly/advance_slick.html) |
 
 For details, please refer to this page.
 https://jellyware.jp/kuragemd/bluejelly/getting_started.html
 
 
 ---
+
 ## 日本語(Japanese)
 
 ### 概要
 BlueJellyはWeb Bluetooth APIを簡単に扱うことができるラッパーライブラリです。
 HTMLとJavaScriptだけでBLEをプログラミングできます。
 
-![](https://jellyware.jp/kurage/img/cover/bluejelly/getting_started.png)
+![](https://jellyware.jp/kuragemd_assets/thumbnail/bluejelly/getting_started.jpg)
 
-動画：https://youtu.be/vIAnHCNDn3M
+動画：https://youtu.be/lngnalPv-eY
 
 ### 対応OS
 - Windows10（version1706以降）
