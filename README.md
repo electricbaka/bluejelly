@@ -29,14 +29,16 @@ No need
 
 ### Demo & Document
 
+
+
 | Type | Demo | Document |
 | -------- | -------- | -------- |
-| Basic | [scan](https://jellyware.jp/kuragemd_assets/code/bluejelly/scan.html) | [scan](http://jellyware.jp/kuragemd/bluejelly/scan.html)|
-| Basic | [connect](https://jellyware.jp/kuragemd_assets/code/bluejelly/connect.html)| [connect](http://jellyware.jp/kuragemd/bluejelly/connect.html) |
-| Basic | [read](https://jellyware.jp/kuragemd_assets/code/bluejelly/read.html)| [read](http://jellyware.jp/kuragemd/bluejelly/read.html)|
-| Basic | [notify](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify.html) | [notify](http://jellyware.jp/kuragemd/bluejelly/notify.html) |
-| Basic | [write](https://jellyware.jp/kuragemd_assets/code/bluejelly/write.html) |  [write](http://jellyware.jp/kuragemd/bluejelly/write.html) |
-| Basic |  [disconnect](https://jellyware.jp/kuragemd_assets/code/bluejelly/disconnect.html) | [disconnect](http://jellyware.jp/kuragemd/bluejelly/disconnect.html)  |
+| Basic | [Scan](https://jellyware.jp/kuragemd_assets/code/bluejelly/scan.html) | [Scan](http://jellyware.jp/kuragemd/bluejelly/scan.html)|
+| Basic | [Connect](https://jellyware.jp/kuragemd_assets/code/bluejelly/connect.html)| [Connect](http://jellyware.jp/kuragemd/bluejelly/connect.html) |
+| Basic | [Read](https://jellyware.jp/kuragemd_assets/code/bluejelly/read.html)| [Read](http://jellyware.jp/kuragemd/bluejelly/read.html)|
+| Basic | [Notify](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify.html) / [Notify UART](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_uart.html) | [Notify](http://jellyware.jp/kuragemd/bluejelly/notify.html) |
+| Basic | [Write](https://jellyware.jp/kuragemd_assets/code/bluejelly/write.html) / [Write UART](https://jellyware.jp/kuragemd_assets/code/bluejelly/write_uart.html) |  [Write](http://jellyware.jp/kuragemd/bluejelly/write.html) |
+| Basic |  [Disconnect](https://jellyware.jp/kuragemd_assets/code/bluejelly/disconnect.html) | [Disconnect](http://jellyware.jp/kuragemd/bluejelly/disconnect.html)  |
 | Basic | - | [API Reference](http://jellyware.jp/kuragemd/bluejelly/api_reference.html) |
 | Advanced | [Multiple Connection](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_2connection.html) |  [Multiple Connection](http://jellyware.jp/kuragemd/bluejelly/multiple_connections.html) |
 | Advanced | [Graph](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_graph.html) | [Graph](http://jellyware.jp/kuragemd/bluejelly/advance_graph.html)  |
@@ -79,13 +81,13 @@ Chromeのみ
 
 | 種類 | デモ | 資料 |
 | -------- | -------- | -------- |
-| 基本 | [scan](https://jellyware.jp/kuragemd_assets/code/bluejelly/scan.html) | [scan](http://jellyware.jp/kuragemd/bluejelly/scan.html)|
-| 基本 | [connect](https://jellyware.jp/kuragemd_assets/code/bluejelly/connect.html)| [connect](http://jellyware.jp/kuragemd/bluejelly/connect.html) |
-| 基本 | [read](https://jellyware.jp/kuragemd_assets/code/bluejelly/read.html)| [read](http://jellyware.jp/kuragemd/bluejelly/read.html)|
-| 基本 | [notify](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify.html) | [notify](http://jellyware.jp/kuragemd/bluejelly/notify.html) |
-| 基本 | [write](https://jellyware.jp/kuragemd_assets/code/bluejelly/write.html) |  [write](http://jellyware.jp/kuragemd/bluejelly/write.html) |
-| 基本 |  [disconnect](https://jellyware.jp/kuragemd_assets/code/bluejelly/disconnect.html) | [disconnect](http://jellyware.jp/kuragemd/bluejelly/disconnect.html)  |
-| 基本 | - | [API Reference](http://jellyware.jp/kuragemd/bluejelly/api_reference.html) |
+| 基本 | [Scan](https://jellyware.jp/kuragemd_assets/code/bluejelly/scan.html) | [Scan](http://jellyware.jp/kuragemd/bluejelly/scan.html)|
+| 基本 | [Connect](https://jellyware.jp/kuragemd_assets/code/bluejelly/connect.html)| [Connect](http://jellyware.jp/kuragemd/bluejelly/connect.html) |
+| 基本 | [Read](https://jellyware.jp/kuragemd_assets/code/bluejelly/read.html)| [Read](http://jellyware.jp/kuragemd/bluejelly/read.html)|
+| 基本 | [Notify](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify.html) / [Notify UART](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_uart.html) | [Notify](http://jellyware.jp/kuragemd/bluejelly/notify.html) |
+| 基本 | [Write](https://jellyware.jp/kuragemd_assets/code/bluejelly/write.html) / [Write UART](https://jellyware.jp/kuragemd_assets/code/bluejelly/write_uart.html) |  [Write](http://jellyware.jp/kuragemd/bluejelly/write.html) |
+| 基本 |  [Disconnect](https://jellyware.jp/kuragemd_assets/code/bluejelly/disconnect.html) | [Disconnect](http://jellyware.jp/kuragemd/bluejelly/disconnect.html)  |
+| 基本 | - | [APIリファレンス](http://jellyware.jp/kuragemd/bluejelly/api_reference.html) |
 | 応用 | [複数接続](https://jellyware.jp/kuragemd_assets/code/bluejelly/notify_2connection.html) |  [複数接続](http://jellyware.jp/kuragemd/bluejelly/multiple_connections.html) |
 | 応用 | [グラフ](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_graph.html) | [グラフ](http://jellyware.jp/kuragemd/bluejelly/advance_graph.html)  |
 | 応用 | [音声出力](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_sound.html) | [音声出力](http://jellyware.jp/kuragemd/bluejelly/advance_sound.html)  |
