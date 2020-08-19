@@ -1,10 +1,12 @@
 # BlueJelly
 
 ---
+
 ## English
 
 ### Overview
-BlueJelly is a wrapper library that can handle WebBluetoothAPI easily !
+
+BlueJelly is a wrapper library that can handle WebBluetoothAPI easily !  
 You can program BLE with HTML and JavaScript only.
 
 ![](https://jellyware.jp/kuragemd_assets/thumbnail/bluejelly/getting_started.jpg)
@@ -13,6 +15,7 @@ Video：https://youtu.be/lngnalPv-eY
 
 
 ### Supported OS
+
 - Windows10(version1706 or later)
 - Mac(Requires OS X Yosemite or later)
 - Android(Android 6.0 Marshmallow or later)
@@ -20,13 +23,16 @@ Video：https://youtu.be/lngnalPv-eY
 - Chrome OS
 
 ### Unsupported OS
+
 - iOS
 
 ### Supported Browser
-Chrome only
+
+- Chrome only
 
 ### Installation & Setup
-No need
+
+- No need
 
 ### Demo & Document
 
@@ -45,7 +51,7 @@ No need
 | Advanced | [Voice Speech](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech.html) | [Voice Speech](http://jellyware.jp/kuragemd/bluejelly/advance_speech.html)  |
 | Advanced | [Slide](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html) | [Slide](http://jellyware.jp/kuragemd/bluejelly/advance_slick.html) |
 
-For details, please refer to this page.
+For details, please refer to this page.  
 https://jellyware.jp/kuragemd/bluejelly/getting_started.html
 
 
@@ -54,7 +60,8 @@ https://jellyware.jp/kuragemd/bluejelly/getting_started.html
 ## 日本語(Japanese)
 
 ### 概要
-BlueJellyはWeb Bluetooth APIを簡単に扱うことができるラッパーライブラリです。
+
+BlueJellyはWeb Bluetooth APIを簡単に扱うことができるラッパーライブラリです。  
 HTMLとJavaScriptだけでBLEをプログラミングできます。
 
 ![](https://jellyware.jp/kuragemd_assets/thumbnail/bluejelly/getting_started.jpg)
@@ -62,6 +69,7 @@ HTMLとJavaScriptだけでBLEをプログラミングできます。
 動画：https://youtu.be/lngnalPv-eY
 
 ### 対応OS
+
 - Windows10（version1706以降）
 - Mac (OS X Yosemite以降)
 - Android (Android 6.0 Marshmallow以降)
@@ -69,13 +77,16 @@ HTMLとJavaScriptだけでBLEをプログラミングできます。
 - Chrome OS
 
 ### 非対応OS
+
 - iOS
 
 ### 対応ブラウザ
-Chromeのみ
+
+- Chromeのみ
 
 ### インストールとセットアップ
-不要
+
+- 不要
 
 ### デモと資料
 
@@ -94,6 +105,6 @@ Chromeのみ
 | 応用 | [音声合成](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_speech.html) | [音声合成](http://jellyware.jp/kuragemd/bluejelly/advance_speech.html)  |
 | 応用 | [スライド](https://jellyware.jp/kuragemd_assets/code/bluejelly/advance_slick.html) | [スライド](http://jellyware.jp/kuragemd/bluejelly/advance_slick.html) |
 
-詳細はこちらのページを参照してください。
+詳細はこちらのページを参照してください。  
 https://jellyware.jp/kuragmd/bluejelly/getting_started.html
 
